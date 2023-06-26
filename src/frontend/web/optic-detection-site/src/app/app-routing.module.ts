@@ -28,35 +28,41 @@ const routes: Routes = [
             (m) => m.ServicesModule
           ),
       },
-      // {
-      //   path: 'about-us',
-      //   loadChildren: () =>
-      //     import('./pages/about-us/about-us.module').then(
-      //       (m) => m.AboutUsModule
-      //     ),
-      // },
-     
-      // {
-      //   path: 'articles',
-      //   loadChildren: () =>
-      //     import('./pages/news-articles/news-articles.module').then(
-      //       (m) => m.NewsArticlesModule
-      //     ),
-      // },
-      // {
-      //   path: 'articles/:articleName',
-      //   loadChildren: () =>
-      //     import('./pages/news-articles-details/news-articles-details.module').then(
-      //       (m) => m.NewsArticlesDetailsModule
-      //     ),
-      // },
-      // {
-      //   path: 'contact-us',
-      //   loadChildren: () =>
-      //     import('./pages/contact-us/contact-us.module').then(
-      //       (m) => m.ContactUsModule
-      //     ),
-      // }
+      {
+        path: 'about-us',
+        loadChildren: () =>
+          import('./pages/about-us/aboutUs.module').then(
+            (m) => m.AboutUsModule
+          ),
+      },
+      {
+        path: 'doctors',
+        loadChildren: () =>
+          import('./pages/doctors/doctors.module').then(
+            (m) => m.DoctorsModule
+          ),
+      },
+      {
+        path: 'book',
+        loadChildren: () =>
+          import('./pages/books/books.module').then(
+            (m) => m.BooksModule
+          ),
+      },
+      {
+        path: 'review',
+        loadChildren: () =>
+          import('./pages/reviews/reviews.module').then(
+            (m) => m.ReviewsModule
+          ),
+      },
+      {
+        path: 'blogs',
+        loadChildren: () =>
+          import('./pages/blogs/blogs.module').then(
+            (m) => m.BlogsModule
+          ),
+      }
     ],
   },
 ];

@@ -5,7 +5,7 @@ import { navItems } from '../_nav';
 @Component({
   selector: 'app-default-header',
   templateUrl: './default-header.component.html',
-  styleUrls: ['./default-header.component.scss']
+  styleUrls: ['./default-header.component.css']
 })
 export class DefaultHeaderComponent implements OnInit {
 
