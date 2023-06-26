@@ -11,9 +11,7 @@ export class DefaultHeaderComponent implements OnInit {
 
   navItems: INavData[] = navItems;
 
-  ngOnInit(): void {
-    console.log(this.navItems);
-    }
+  ngOnInit(): void {}
 
 
 

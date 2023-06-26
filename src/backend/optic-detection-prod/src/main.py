@@ -1,10 +1,12 @@
 from flask import Flask
+from routes.routes import *
+from environments.configs import DevelopmentConfig
 
-app = Flask(__name__)
+def create_app():
+    app = Flask(__name__)
+    app.config.from_object(DevelopmentConfig)
+    app.register_blueprint(api_bp)
 
-@app.route("/")
-def home():
-    return "Hello, World!"
+    return app
 
-if __name__ == "__main__":
-    app.run(debug=True)
+app = create_app()
