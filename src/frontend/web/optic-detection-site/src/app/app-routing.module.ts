@@ -29,6 +29,13 @@ const routes: Routes = [
           ),
       },
       {
+        path: 'consultation',
+        loadChildren: () =>
+          import('./pages/consultations/consultations.module').then(
+            (m) => m.ConsultationsModule
+          ),
+      },
+      {
         path: 'about-us',
         loadChildren: () =>
           import('./pages/about-us/aboutUs.module').then(
