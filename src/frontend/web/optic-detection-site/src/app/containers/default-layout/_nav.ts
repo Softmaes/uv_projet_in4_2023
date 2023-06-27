@@ -6,6 +6,10 @@ export const navItems: INavData[] = [
     url: '/home'
   },
   {
+    name: 'Consultation',
+    url: '/consultation'
+  },
+  {
     name: 'Services',
     url: '/services'
   },
